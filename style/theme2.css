@@ -60,7 +60,6 @@ li {
 }
 #main #app #app-header .theme-container .theme-controls {
   width: 70px;
-  padding: 0.2rem 0px;
   margin: auto;
   text-align: center;
   margin-top: 5px;
@@ -70,6 +69,7 @@ li {
 #main #app #app-header .theme-container .theme-controls .theme-control-1 {
   width: 15px;
   height: 15px;
+  margin-top: 4px;
   display: inline-block;
   cursor: pointer;
   border-radius: 50px;
@@ -77,6 +77,7 @@ li {
 #main #app #app-header .theme-container .theme-controls .theme-control-2 {
   width: 15px;
   height: 15px;
+  margin-top: 4px;
   display: inline-block;
   border-radius: 50px;
   background-color: hsl(25, 98%, 40%);

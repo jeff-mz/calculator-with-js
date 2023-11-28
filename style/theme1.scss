@@ -68,7 +68,7 @@ li {
         }
         .theme-controls {
           width: 70px;
-          padding: 0.2rem 0px;
+          // padding: 0.2rem 0px;
           margin: auto;
           text-align: center;
           margin-top: 5px;
@@ -78,6 +78,7 @@ li {
             width: 15px;
             height: 15px;
             display: inline-block;
+            margin-top: 4px;
             border-radius: 50px;
             background-color: $theme1-Red-background;
             cursor: pointer;
@@ -87,6 +88,7 @@ li {
             width: 15px;
             height: 15px;
             display: inline-block;
+            margin-top: 4px;
             border-radius: 50px;
             cursor: pointer;
           }
@@ -94,6 +96,7 @@ li {
             width: 15px;
             height: 15px;
             display: inline-block;
+            margin-top: 4px;
             border-radius: 50px;
             cursor: pointer;
           }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <!-- Desktop Styles -->
+    <link rel="stylesheet" href="./style/theme1.css" class="theme-trigger">
+    <!-- <link rel="stylesheet" href="./style/theme2.css"> -->
+    <!-- <link rel="stylesheet" href="./style/theme3.css"> -->
+
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&family=Roboto:wght@700&display=swap"
+      rel="stylesheet">
+
+    <script defer src="./app.js"></script>
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+
+  <body>
+    <main id="main">
+      <div id="app">
+        <header id="app-header">
+          <p class="logo">calc</p>
+          <div class="theme-container">
+            <p class="theme-text">theme</p>
+            <div class="theme-control">
+              <div class="theme-labels">
+                <label for="theme-1" class="label label1">1</label>
+                <label for="theme-2" class="label label2">2</label>
+                <label for="theme-3" class="label label3">3</label>
+              </div>
+              <div class="theme-controls">
+                <div class="theme-control theme-control-1" data-theme="1"></div>
+                <div class="theme-control theme-control-2" data-theme="2"></div>
+                <div class="theme-control theme-control-3" data-theme="3"></div>
+                <!-- <input type="radio" name="theme-1" id="theme-1" class="theme-control-1">
+                <input type="radio" name="theme-2" id="theme-2" class="theme-control-2">
+                <input type="radio" name="theme-3" id="theme-3" class="theme-control-3"> -->
+              </div>
+            </div>
+          </div>
+        </header>
+        <div id="app-main">
+          <div class="app-input">
+            <input type="text" name="number-input" id="number-input" class="number-input">
+          </div>
+          <div class="app-keys">
+            <div class="key-wrapper">
+              <li class="number-keys key key1">7</li>
+              <li class="number-keys key key2">8</li>
+              <li class="number-keys key key3">9</li>
+              <li class="operation delete key key4 pr-key">del</li>
+            </div>
+            <div class="key-wrapper">
+              <li class="number-keys key key5">4</li>
+              <li class="number-keys key key6">5</li>
+              <li class="number-keys key key7">6</li>
+              <li class="operation plus key key8">+</li>
+            </div>
+            <div class="key-wrapper">
+              <li class="number-keys key key9">1</li>
+              <li class="number-keys key key10">2</li>
+              <li class="number-keys key key11">3</li>
+              <li class="operation minus key key12">-</li>
+            </div>
+            <div class="key-wrapper">
+              <li class=" dot key key13">.</li>
+              <li class="number-keys key key14">0</li>
+              <li class="operation divide key key15">/</li>
+              <li class="operation multiply key key16">×</li>
+            </div>
+            <div class="key-wrapper">
+              <li class="operation reset key key17 pr-key">reset</li>
+              <li class="operation equal key key18">=</li>
+            </div>
+          </div>
+        </div>
+        <div id="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="https://www.frontendmentor.io/profile/jeff-dev0">Jafar Mirzapoor </a>.
+        </div>
+      </div>
+    </main>
+  </body>
+
+</html>

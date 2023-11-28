@@ -1,0 +1,198 @@
+// theme2
+$theme2-main-background: hsl(0, 0%, 90%);
+$theme2-keypad-background: hsl(0, 5%, 81%);
+$theme2-screen-background: hsl(0, 0%, 93%);
+$theme2-key-background: hsl(185, 42%, 37%);
+$theme2-key-shadow: hsl(185, 58%, 25%);
+$theme2-Orange-background: hsl(25, 98%, 40%);
+$theme2-orange-shadow: hsl(25, 99%, 27%);
+$theme2-grayish-key: hsl(45, 7%, 89%);
+$theme2-grayish-shadow: hsl(35, 11%, 61%);
+$theme2-grayish-yellow-text: hsl(60, 10%, 19%);
+$theme2-White-text: hsl(0, 0%, 100%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style: none;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  background-color: $theme2-main-background;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  #app {
+    width: 350px;
+    margin: auto;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    #app-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        color: $theme2-grayish-yellow-text;
+        font-size: 20px;
+        padding-top: 18px;
+      }
+      .theme-container {
+        display: flex;
+        align-items: flex-end;
+        .theme-text {
+          color: $theme2-grayish-yellow-text;
+          text-transform: uppercase;
+          font-size: 10px;
+          margin-right: 1rem;
+          margin-bottom: 0.2rem;
+        }
+        .theme-labels {
+          width: 70px;
+          text-align: center;
+          padding-left: 3px;
+          .label {
+            letter-spacing: 10px;
+            color: $theme2-grayish-yellow-text;
+          }
+        }
+        .theme-controls {
+          width: 70px;
+          // height: 15px;
+          padding: 0.2rem 0px;
+          margin: auto;
+          text-align: center;
+          margin-top: 5px;
+          background-color: $theme2-keypad-background;
+          border-radius: 10px;
+          .theme-control-1 {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50px;
+          }
+          .theme-control-2 {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            border-radius: 50px;
+            background-color: $theme2-Orange-background;
+            cursor: pointer;
+          }
+          .theme-control-3 {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50px;
+          }
+        }
+      }
+    }
+    #app-main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .app-input {
+        .number-input {
+          width: 100%;
+          margin: 1rem auto;
+          padding: 2rem 0.5rem;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          background-color: $theme2-screen-background;
+          font-size: 42px;
+        }
+      }
+      .app-keys {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: $theme2-grayish-shadow;
+        border-radius: 5px;
+        .key-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .key {
+            background-color: $theme2-keypad-background;
+            display: inline-block;
+            width: 73px;
+            height: 40px;
+            margin: 0.5rem 0.3rem;
+            color: $theme2-grayish-yellow-text;
+            text-align: center;
+            padding-top: 0.3rem;
+            border-radius: 5px;
+            font-size: 22px;
+            text-transform: uppercase;
+            box-shadow: $theme2-key-shadow 0px 3px;
+            cursor: pointer;
+          }
+          .key:hover {
+            background-color: $theme2-screen-background;
+          }
+          .key4 {
+            padding-top: 0.5rem;
+            font-size: 18px;
+            background-color: $theme2-key-background;
+            color: $theme2-White-text;
+            box-shadow: $theme2-key-shadow 0px 3px;
+          }
+          .key17 {
+            width: 150px;
+            color: $theme2-White-text;
+            background-color: $theme2-key-background;
+            box-shadow: $theme2-key-shadow 0px 3px;
+            font-size: 18px;
+          }
+          .key4:hover,
+          .key17:hover {
+            background-color: $theme2-key-background;
+          }
+          .key18 {
+            width: 150px;
+            color: $theme2-White-text;
+            background-color: $theme2-Orange-background;
+            box-shadow: $theme2-orange-shadow 0px 3px;
+          }
+          .key18:hover {
+            background-color: $theme2-Orange-background;
+          }
+        }
+      }
+    }
+    #attribution {
+      font-size: 12px;
+      text-align: center;
+      padding-top: 0.8rem;
+      color: #7a7a7a;
+      a {
+        color: #fefefe;
+      }
+
+      label {
+        display: inline;
+      }
+    }
+  }
+}
+@media (max-width: 470px) {
+  #main {
+    #app {
+      width: 80%;
+    }
+  }
+}

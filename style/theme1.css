@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(222, 26%, 31%);
+  margin: auto;
+}
+#main #app {
+  width: 350px;
+  margin: auto;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+#main #app #app-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #app #app-header .logo {
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  padding-top: 18px;
+}
+#main #app #app-header .theme-container {
+  display: flex;
+  align-items: flex-end;
+}
+#main #app #app-header .theme-container .theme-text {
+  color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  font-size: 10px;
+  margin-right: 1rem;
+  margin-bottom: 0.2rem;
+}
+#main #app #app-header .theme-container .theme-labels {
+  width: 70px;
+  text-align: center;
+  padding-left: 3px;
+}
+#main #app #app-header .theme-container .theme-labels .label {
+  letter-spacing: 10px;
+  color: hsl(0, 0%, 100%);
+}
+#main #app #app-header .theme-container .theme-controls {
+  width: 70px;
+  padding: 0.2rem 0px;
+  margin: auto;
+  text-align: center;
+  margin-top: 5px;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 10px;
+}
+#main #app #app-header .theme-container .theme-controls .theme-control-1 {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50px;
+  background-color: hsl(6, 63%, 50%);
+  cursor: pointer;
+}
+#main #app #app-header .theme-container .theme-controls .theme-control-2 {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#main #app #app-header .theme-container .theme-controls .theme-control-3 {
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-radius: 50px;
+  cursor: pointer;
+}
+#main #app #app-main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#main #app #app-main .app-input .number-input {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem 0.5rem;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: hsl(224, 36%, 15%);
+  font-size: 42px;
+}
+#main #app #app-main .app-keys {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 5px;
+}
+#main #app #app-main .app-keys .key-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#main #app #app-main .app-keys .key-wrapper .key {
+  background-color: hsl(30, 25%, 89%);
+  display: inline-block;
+  width: 73px;
+  height: 40px;
+  margin: 0.5rem 0.3rem;
+  color: hsl(223, 31%, 20%);
+  text-align: center;
+  padding-top: 0.3rem;
+  border-radius: 5px;
+  font-size: 22px;
+  text-transform: uppercase;
+  box-shadow: hsl(28, 16%, 65%) 0px 3px;
+  cursor: pointer;
+}
+#main #app #app-main .app-keys .key-wrapper .key:hover {
+  background-color: hsl(0, 0%, 100%);
+}
+#main #app #app-main .app-keys .key-wrapper .key4 {
+  padding-top: 0.5rem;
+  font-size: 18px;
+  background-color: hsl(223, 31%, 20%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: hsl(224, 28%, 35%) 0px 3px;
+}
+#main #app #app-main .app-keys .key-wrapper .key17 {
+  width: 150px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(223, 31%, 20%);
+  box-shadow: hsl(224, 28%, 35%) 0px 3px;
+  font-size: 18px;
+}
+#main #app #app-main .app-keys .key-wrapper .key4:hover,
+#main #app #app-main .app-keys .key-wrapper .key17:hover {
+  background-color: hsl(225, 21%, 49%);
+}
+#main #app #app-main .app-keys .key-wrapper .key18 {
+  width: 150px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(6, 63%, 50%);
+  box-shadow: hsl(6, 70%, 34%) 0px 3px;
+}
+#main #app #app-main .app-keys .key-wrapper .key18:hover {
+  background-color: hsl(6, 63%, 50%);
+}
+#main #app #attribution {
+  font-size: 12px;
+  text-align: center;
+  padding-top: 0.8rem;
+  color: #7a7a7a;
+}
+#main #app #attribution a {
+  color: #fefefe;
+}
+#main #app #attribution label {
+  display: inline;
+}
+
+@media (max-width: 470px) {
+  #main #app {
+    width: 80%;
+  }
+}/*# sourceMappingURL=theme1.css.map */

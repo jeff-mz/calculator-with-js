@@ -1,0 +1,199 @@
+// theme3
+$theme3-main-background: hsl(268, 75%, 9%);
+$theme3-keypad-background: hsl(268, 71%, 12%);
+$theme3-key-background: hsl(281, 89%, 26%);
+$theme3-key-shadow: hsl(285, 91%, 52%);
+$theme3-cyan-background: hsl(176, 100%, 44%);
+$theme3-cyan-shadow: hsl(177, 92%, 70%);
+$theme3-violet-background: hsl(268, 47%, 21%);
+$theme3-magenta-shadow: hsl(290, 70%, 36%);
+$theme3-Light-yellow-text: hsl(52, 100%, 62%);
+$theme3-dark-blue-text: hsl(198, 20%, 13%);
+$theme3-White-text: hsl(0, 0%, 100%);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+li {
+  list-style: none;
+}
+#main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-color: $theme3-main-background;
+  margin: auto;
+  #app {
+    width: 350px;
+    margin: auto;
+    padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    #app-header {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .logo {
+        color: $theme3-Light-yellow-text;
+        font-size: 20px;
+        padding-top: 18px;
+      }
+      .theme-container {
+        display: flex;
+        align-items: flex-end;
+        .theme-text {
+          color: $theme3-Light-yellow-text;
+          text-transform: uppercase;
+          font-size: 10px;
+          margin-right: 1rem;
+          margin-bottom: 0.2rem;
+        }
+        .theme-labels {
+          width: 70px;
+          text-align: center;
+          padding-left: 3px;
+          .label {
+            letter-spacing: 10px;
+            color: $theme3-White-text;
+          }
+        }
+        .theme-controls {
+          width: 70px;
+          // height: 15px;
+          padding: 0.2rem 0px;
+          margin: auto;
+          text-align: center;
+          margin-top: 5px;
+          background-color: $theme3-keypad-background;
+          border-radius: 10px;
+          .theme-control-1 {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50px;
+          }
+          .theme-control-2 {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50px;
+          }
+          .theme-control-3 {
+            width: 15px;
+            height: 15px;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 50px;
+            background-color: $theme3-violet-background;
+          }
+        }
+      }
+    }
+    #app-main {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      .app-input {
+        .number-input {
+          width: 100%;
+          margin: 1rem auto;
+          padding: 2rem 0.5rem;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          background-color: $theme3-violet-background;
+          color: $theme3-Light-yellow-text;
+          font-size: 42px;
+        }
+      }
+      .app-keys {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: $theme3-violet-background;
+        border-radius: 5px;
+        .key-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .key {
+            background-color: $theme3-keypad-background;
+            display: inline-block;
+            width: 73px;
+            height: 40px;
+            margin: 0.5rem 0.3rem;
+            color: $theme3-Light-yellow-text;
+            text-align: center;
+            padding-top: 0.3rem;
+            border-radius: 5px;
+            font-size: 22px;
+            text-transform: uppercase;
+            box-shadow: $theme3-key-shadow 0px 3px;
+            cursor: pointer;
+          }
+          .key:hover {
+            background-color: $theme3-violet-background;
+          }
+          .key4 {
+            padding-top: 0.5rem;
+            font-size: 18px;
+            background-color: $theme3-key-background;
+            color: $theme3-White-text;
+            box-shadow: $theme3-key-shadow 0px 3px;
+          }
+          .key17 {
+            width: 150px;
+            color: $theme3-White-text;
+            background-color: $theme3-key-background;
+            box-shadow: $theme3-key-shadow 0px 3px;
+            font-size: 18px;
+          }
+          .key4:hover,
+          .key17:hover {
+            background-color: $theme3-key-background;
+          }
+          .key18 {
+            width: 150px;
+            color: $theme3-White-text;
+            background-color: $theme3-cyan-background;
+            box-shadow: $theme3-cyan-shadow 0px 3px;
+          }
+          .key18:hover {
+            background-color: $theme3-cyan-shadow;
+          }
+        }
+      }
+    }
+    #attribution {
+      font-size: 12px;
+      text-align: center;
+      padding-top: 0.8rem;
+      color: #7a7a7a;
+      a {
+        color: #fefefe;
+      }
+
+      label {
+        display: inline;
+      }
+    }
+  }
+}
+@media (max-width: 470px) {
+  #main {
+    #app {
+      width: 80%;
+    }
+  }
+}
